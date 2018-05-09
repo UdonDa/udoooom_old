@@ -15,7 +15,7 @@ const styles = theme => ({
 function ActivitiesButtons(props) {
   const { classes } = props;
   return (
-    <div>
+    <div className="TopButton">
       <Button variant="raised" className={classes.button}>
         Activity
       </Button>

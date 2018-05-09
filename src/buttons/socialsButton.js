@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
+import propTypes from "prop-types";
 import { withStyles } from "material-ui/styles";
 import Button from "material-ui/Button";
 
@@ -15,7 +15,7 @@ const styles = theme => ({
 function SocialsButtons(props) {
   const { classes } = props;
   return (
-    <div>
+    <div className="TopButton">
       <Button variant="raised" className={classes.button}>
         Socials
       </Button>
@@ -23,8 +23,8 @@ function SocialsButtons(props) {
   );
 }
 
-SocialsButtons.PropTypes = {
-  classes: PropTypes.object.isRequired
+SocialsButtons.propTypes = {
+  classes: propTypes.object.isRequired
 };
 
 export default withStyles(styles)(SocialsButtons);

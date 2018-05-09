@@ -15,7 +15,7 @@ const styles = theme => ({
 function ProfileButtons(props) {
   const { classes } = props;
   return (
-    <div>
+    <div className="TopButton">
       <Button variant="raised" className={classes.button}>
         Profile
       </Button>
