@@ -17,7 +17,7 @@ function RaisedButtons(props) {
   return (
     <div>
       <Button variant="raised" className={classes.button}>
-        Default
+        Socials
       </Button>
     </div>
   );
