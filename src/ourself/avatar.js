@@ -23,7 +23,7 @@ function ImageAvatars(props) {
   return (
     <div className={classes.row}>
       <Avatar
-        alt="Adelle Charles"
+        alt="udoooom"
         src="/static/images/profile-logo.jpg"
         className={classNames(classes.avatar, classes.bigAvatar)}
       />
