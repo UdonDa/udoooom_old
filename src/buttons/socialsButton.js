@@ -12,7 +12,7 @@ const styles = theme => ({
   }
 });
 
-function RaisedButtons(props) {
+function SocialsButtons(props) {
   const { classes } = props;
   return (
     <div>
@@ -23,8 +23,8 @@ function RaisedButtons(props) {
   );
 }
 
-RaisedButtons.PropTypes = {
+SocialsButtons.PropTypes = {
   classes: PropTypes.object.isRequired
 };
 
-export default withStyles(styles)(RaisedButtons);
+export default withStyles(styles)(SocialsButtons);
