@@ -87,40 +87,43 @@ class App extends Component {
                     showLabels
                     className={classes.buttons}
                   >
-                    <BottomNavigationAction label="Home" icon={<HomeIcon />}>
-                      <Link to="/">
-                        <HomeButton />
-                      </Link>
-                    </BottomNavigationAction>
                     <BottomNavigationAction
+                      component={({ ...props }) => <Link to="/" {...props} />}
+                      label="Home"
+                      icon={<HomeIcon />}
+                    />
+
+                    <BottomNavigationAction
+                      component={({ ...props }) => (
+                        <Link to="/profile" {...props} />
+                      )}
                       label="Profile"
                       icon={<ProfileIcon />}
-                    >
-                      <Link to="/profile">
-                        <ProfileButton />
-                      </Link>
-                    </BottomNavigationAction>
+                    />
+
                     <BottomNavigationAction
+                      component={({ ...props }) => (
+                        <Link to="/activities" {...props} />
+                      )}
                       label="Activity"
                       icon={<ActivitiesIcon />}
-                    >
-                      <Link to="/activities">
-                        <ActivitiesButton />
-                      </Link>
-                    </BottomNavigationAction>
-                    <BottomNavigationAction label="Work" icon={<WorksIcon />}>
-                      <Link to="/works">
-                        <WorksButton />
-                      </Link>
-                    </BottomNavigationAction>
+                    />
+
                     <BottomNavigationAction
+                      component={({ ...props }) => (
+                        <Link to="/works" {...props} />
+                      )}
+                      label="Work"
+                      icon={<WorksIcon />}
+                    />
+
+                    <BottomNavigationAction
+                      component={({ ...props }) => (
+                        <Link to="/socials" {...props} />
+                      )}
                       label="Social"
                       icon={<SocialsIcon />}
-                    >
-                      <Link to="/socials">
-                        <SocialsButton />
-                      </Link>
-                    </BottomNavigationAction>
+                    />
                   </BottomNavigation>
                 </li>
               </ul>
