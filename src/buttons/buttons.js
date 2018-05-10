@@ -10,9 +10,6 @@ class Buttons extends Component {
   render() {
     return (
       <div className="Buttons">
-        <div>
-          <Avatar />
-        </div>
         <div className="ButtonsContainer">
           <ProfileButton />
           <ActivitiesButton />

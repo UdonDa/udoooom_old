@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 import { withStyles } from "material-ui/styles";
 import Avatar from "material-ui/Avatar";
+import "./avatar.css";
 
 const styles = {
   row: {
@@ -27,7 +28,7 @@ function ImageAvatars(props) {
         src="/static/images/profile-logo.jpg"
         className={classNames(classes.avatar, classes.bigAvatar)}
       />
-      <div>udoooom</div>
+      <div className="MyName">udoooom</div>
     </div>
   );
 }
