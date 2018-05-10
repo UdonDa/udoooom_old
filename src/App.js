@@ -51,7 +51,7 @@ class App extends Component {
           <Avatar />
           <Router>
             <div>
-              <ul class="ButtonContainer">
+              <ul className="ButtonContainer">
                 <li>
                   <Link to="/">
                     <HomeButton />
