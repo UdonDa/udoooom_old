@@ -1,20 +1,38 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import logo from "./logo.svg";
 import "./App.css";
-import Header from "./header/header";
+import Avatar from "./ourself/avatar";
+import ActivitiesButton from "./buttons/activitiesButton";
+import ProfileButton from "./buttons/profileButton";
+import SocialsButton from "./buttons/socialsButton";
+import WorksButton from "./buttons/worksButton";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title"> Welcome to React </h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload
-        </p>
-        <Header />
+        <div className="header">
+          <Avatar />
+          <Router>
+            <ul>
+              <li>
+                <Link to="/">
+                  <ProfileButton />
+                </Link>
+                <Link to="/activities">
+                  <ActivitiesButton />
+                </Link>
+                <Link to="/works">
+                  <WorksButton />
+                </Link>
+                <Link to="/socials">
+                  <SocialsButton />
+                </Link>
+              </li>
+            </ul>
+          </Router>
+        </div>
       </div>
     );
   }
