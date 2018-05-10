@@ -6,6 +6,7 @@ import AccountIcon from "@material-ui/icons/AccountCircle";
 import SchoolIcon from "@material-ui/icons/School";
 import EmailIcon from "@material-ui/icons/Email";
 import BirthdayIcon from "@material-ui/icons/Cake";
+import FavoriteIcon from "@material-ui/icons/Favorite";
 
 const styles = {
   container: {
@@ -49,21 +50,6 @@ function Profile(props) {
 
       <div className={classes.container}>
         <Avatar className={classes.icon}>
-          <SchoolIcon />
-        </Avatar>
-        <div className={classes.text}>
-          <a
-            href="http://www.uec.ac.jp/"
-            target="_blank"
-            className={classes.text}
-          >
-            UEC Tokyo Undergraduate 2nd grade
-          </a>)
-        </div>
-      </div>
-
-      <div className={classes.container}>
-        <Avatar className={classes.icon}>
           <EmailIcon />
         </Avatar>
         <a href="mailto:udooon0727@gmail.com" className={classes.text}>
@@ -94,6 +80,59 @@ function Profile(props) {
           >
             @daichi0727
           </a>
+        </div>
+      </div>
+
+      <div className={classes.container}>
+        <Avatar src="/static/images/hatenablog.jpg" className={classes.icon} />
+        <div className={classes.text}>
+          <a
+            href="http://udoooom.hatenablog.com/"
+            target="_blank"
+            className={classes.text}
+          >
+            udooom’s diary
+          </a>
+        </div>
+      </div>
+
+      <div className={classes.container}>
+        <Avatar className={classes.icon}>
+          <SchoolIcon />
+        </Avatar>
+        <div className={classes.text}>
+          <a
+            href="http://www.uec.ac.jp/"
+            target="_blank"
+            className={classes.text}
+          >
+            UEC Tokyo Undergraduate 2nd grade
+          </a>)
+        </div>
+      </div>
+
+      <div className={classes.container}>
+        <Avatar src="/static/images/labo.png" className={classes.icon} />
+        <div className={classes.text}>
+          <a
+            href="http://mm.cs.uec.ac.jp/e/"
+            target="_blank"
+            className={classes.text}
+          >
+            My Laboratory is Yanai Laboratory, <br />Department of Computer
+            Science
+          </a>
+        </div>
+      </div>
+
+      <div className={classes.container}>
+        <Avatar className={classes.icon}>
+          <FavoriteIcon />
+        </Avatar>
+        <div className={classes.text}>
+          DeepLearning, MachineLerning, GAN<br />ComputerVision,
+          OcjectDetection,
+          <br />DataMining, IntelligentRobotics
         </div>
       </div>
     </div>
