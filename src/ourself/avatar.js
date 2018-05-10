@@ -8,7 +8,8 @@ import "./avatar.css";
 const styles = {
   row: {
     display: "flex",
-    justifyContent: "center"
+    justifyContent: "center",
+    padding: "50px 0 0 0"
   },
   avatar: {
     margin: 10
