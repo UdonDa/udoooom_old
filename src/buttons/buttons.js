@@ -4,7 +4,6 @@ import ProfileButton from "./profileButton";
 import ActivitiesButton from "./activitiesButton";
 import WorksButton from "./worksButton";
 import SocialsButton from "./socialsButton";
-import Avatar from "../ourself/avatar";
 
 class Buttons extends Component {
   render() {

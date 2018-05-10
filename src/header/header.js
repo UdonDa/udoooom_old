@@ -1,6 +1,5 @@
-import React, { Component } from "react";
+import React from "react";
 import PropTypes from "prop-types";
-import classNames from "classnames";
 import { withStyles } from "material-ui/styles";
 import Avatar from "../ourself/avatar";
 import Buttons from "../buttons/buttons";
@@ -17,7 +16,7 @@ function Header(props) {
   );
 }
 
-Header.PropTypes = {
+Header.propTypes = {
   classes: PropTypes.object.isRequired
 };
 

@@ -1,21 +1,21 @@
 import React from "react";
-import propTypes from "prop-types";
+import PropTypes from "prop-types";
 import { withStyles } from "material-ui/styles";
 import Button from "material-ui/Button";
 
 const styles = theme => ({
+  row: {
+    float: "left"
+  },
   button: {
     margin: theme.spacing.unit
-  },
-  input: {
-    display: "none"
   }
 });
 
 function ActivitiesButtons(props) {
   const { classes } = props;
   return (
-    <div className="TopButton">
+    <div className={classes.row}>
       <Button variant="raised" className={classes.button}>
         Activity
       </Button>
@@ -24,7 +24,7 @@ function ActivitiesButtons(props) {
 }
 
 ActivitiesButtons.propTypes = {
-  classes: propTypes.object.isRequired
+  classes: PropTypes.object.isRequired
 };
 
 export default withStyles(styles)(ActivitiesButtons);
