@@ -43,7 +43,7 @@ class App extends Component {
         <div className="header">
           <Avatar />
           <Router>
-            <ul>
+            <ul class="ButtonContainer">
               <li>
                 <Link to="/">
                   <HomeButton />
