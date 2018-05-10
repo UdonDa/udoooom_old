@@ -1,5 +1,8 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { withStyles } from "material-ui/styles";
+import classNames from "classnames";
 import "./App.css";
 import Avatar from "./ourself/avatar";
 import HomeButton from "./buttons/homeButton";
@@ -12,6 +15,14 @@ import Activities from "./acitivity.js";
 import Profile from "./profile";
 import Socials from "./social";
 import Works from "./work";
+import BottomNavigation, {
+  BottomNavigationAction
+} from "material-ui/BottomNavigation";
+import HomeIcon from "@material-ui/icons/Home";
+import ProfileIcon from "@material-ui/icons/AccountBox";
+import ActivitiesIcon from "@material-ui/icons/DirectionsRun";
+import WorksIcon from "@material-ui/icons/Work";
+import SocialsIcon from "@material-ui/icons/Public";
 
 const routes = [
   {
@@ -43,8 +54,25 @@ const RouteWithSubRoutes = route => (
   />
 );
 
+const styles = {
+  buttons: {
+    width: 500
+  }
+};
+
 class App extends Component {
+  state = {
+    value: 0
+  };
+
+  handleChange = (event, value) => {
+    this.setState({ value });
+  };
+
   render() {
+    const { classes } = this.props;
+    const { value } = this.state;
+
     return (
       <div className="App">
         <div className="header">
@@ -53,21 +81,47 @@ class App extends Component {
             <div>
               <ul className="ButtonContainer">
                 <li>
-                  <Link to="/">
-                    <HomeButton />
-                  </Link>
-                  <Link to="/profile">
-                    <ProfileButton />
-                  </Link>
-                  <Link to="/activities">
-                    <ActivitiesButton />
-                  </Link>
-                  <Link to="/works">
-                    <WorksButton />
-                  </Link>
-                  <Link to="/socials">
-                    <SocialsButton />
-                  </Link>
+                  <BottomNavigation
+                    value={value}
+                    onChange={this.handleChange}
+                    showLabels
+                    className={classes.buttons}
+                  >
+                    <BottomNavigationAction label="Home" icon={<HomeIcon />}>
+                      <Link to="/">
+                        <HomeButton />
+                      </Link>
+                    </BottomNavigationAction>
+                    <BottomNavigationAction
+                      label="Profile"
+                      icon={<ProfileIcon />}
+                    >
+                      <Link to="/profile">
+                        <ProfileButton />
+                      </Link>
+                    </BottomNavigationAction>
+                    <BottomNavigationAction
+                      label="Activity"
+                      icon={<ActivitiesIcon />}
+                    >
+                      <Link to="/activities">
+                        <ActivitiesButton />
+                      </Link>
+                    </BottomNavigationAction>
+                    <BottomNavigationAction label="Work" icon={<WorksIcon />}>
+                      <Link to="/works">
+                        <WorksButton />
+                      </Link>
+                    </BottomNavigationAction>
+                    <BottomNavigationAction
+                      label="Social"
+                      icon={<SocialsIcon />}
+                    >
+                      <Link to="/socials">
+                        <SocialsButton />
+                      </Link>
+                    </BottomNavigationAction>
+                  </BottomNavigation>
                 </li>
               </ul>
               {routes.map((route, i) => (
@@ -81,4 +135,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default withStyles(styles)(App);
