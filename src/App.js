@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "./App.css";
 import Avatar from "./ourself/avatar";
 import HomeButton from "./buttons/homeButton";
@@ -36,6 +36,13 @@ const routes = [
   }
 ];
 
+const RouteWithSubRoutes = route => (
+  <Route
+    path={route.path}
+    render={props => <route.component {...props} routes={route.routes} />}
+  />
+);
+
 class App extends Component {
   render() {
     return (
@@ -43,25 +50,30 @@ class App extends Component {
         <div className="header">
           <Avatar />
           <Router>
-            <ul class="ButtonContainer">
-              <li>
-                <Link to="/">
-                  <HomeButton />
-                </Link>
-                <Link to="/profile">
-                  <ProfileButton />
-                </Link>
-                <Link to="/activities">
-                  <ActivitiesButton />
-                </Link>
-                <Link to="/works">
-                  <WorksButton />
-                </Link>
-                <Link to="/socials">
-                  <SocialsButton />
-                </Link>
-              </li>
-            </ul>
+            <div>
+              <ul class="ButtonContainer">
+                <li>
+                  <Link to="/">
+                    <HomeButton />
+                  </Link>
+                  <Link to="/profile">
+                    <ProfileButton />
+                  </Link>
+                  <Link to="/activities">
+                    <ActivitiesButton />
+                  </Link>
+                  <Link to="/works">
+                    <WorksButton />
+                  </Link>
+                  <Link to="/socials">
+                    <SocialsButton />
+                  </Link>
+                </li>
+              </ul>
+              {routes.map((route, i) => (
+                <RouteWithSubRoutes key={i} {...route} />
+              ))}
+            </div>
           </Router>
         </div>
       </div>
