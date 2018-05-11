@@ -33,19 +33,26 @@ function Profile(props) {
         </Avatar>
         <div className={classes.text}>うどん</div>
       </div>
-
       <div className={classes.container}>
         <Avatar className={classes.icon}>
           <AccountIcon />
         </Avatar>
         <div className={classes.text}>堀田 大地 (Daichi Horita)</div>
       </div>
-
       <div className={classes.container}>
         <Avatar className={classes.icon}>
           <BirthdayIcon />
         </Avatar>
-        <div className={classes.text}>1997/7/27</div>
+        <div className={classes.text}>
+          1997/7/27 ->
+          <a
+            href="http://amzn.asia/iFrgbB3"
+            target="_blank"
+            className={classes.text}
+          >
+            欲しいものリスト
+          </a>
+        </div>
       </div>
 
       <div className={classes.container}>
@@ -56,7 +63,6 @@ function Profile(props) {
           udooon0727@gmail.com
         </a>
       </div>
-
       <div className={classes.container}>
         <Avatar src="/static/images/twitter.png" className={classes.icon} />
         <div className={classes.text}>
@@ -69,7 +75,6 @@ function Profile(props) {
           </a>
         </div>
       </div>
-
       <div className={classes.container}>
         <Avatar src="/static/images/facebook.png" className={classes.icon} />
         <div className={classes.text}>
@@ -82,8 +87,7 @@ function Profile(props) {
           </a>
         </div>
       </div>
-
-      <div className={classes.container}>
+      {/* <div className={classes.container}>
         <Avatar src="/static/images/hatenablog.jpg" className={classes.icon} />
         <div className={classes.text}>
           <a
@@ -94,8 +98,7 @@ function Profile(props) {
             udooom’s diary
           </a>
         </div>
-      </div>
-
+      </div> */}
       <div className={classes.container}>
         <Avatar className={classes.icon}>
           <SchoolIcon />
@@ -106,11 +109,10 @@ function Profile(props) {
             target="_blank"
             className={classes.text}
           >
-            UEC Tokyo Undergraduate 2nd grade
-          </a>)
+            UEC Tokyo Undergraduate 3nd grade
+          </a>
         </div>
       </div>
-
       <div className={classes.container}>
         <Avatar src="/static/images/labo.png" className={classes.icon} />
         <div className={classes.text}>
@@ -124,14 +126,13 @@ function Profile(props) {
           </a>
         </div>
       </div>
-
       <div className={classes.container}>
         <Avatar className={classes.icon}>
           <FavoriteIcon />
         </Avatar>
         <div className={classes.text}>
           DeepLearning, MachineLerning, GAN<br />ComputerVision,
-          OcjectDetection,
+          ObjectDetection,
           <br />DataMining, IntelligentRobotics
         </div>
       </div>
