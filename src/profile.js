@@ -7,6 +7,7 @@ import SchoolIcon from "@material-ui/icons/School";
 import EmailIcon from "@material-ui/icons/Email";
 import BirthdayIcon from "@material-ui/icons/Cake";
 import FavoriteIcon from "@material-ui/icons/Favorite";
+import GoodIcon from "@material-ui/icons/WbSunny";
 
 const styles = {
   li: {
@@ -148,12 +149,27 @@ function Profile(props) {
             <br />DataMining, IntelligentRobotics
           </div>
         </li>
+        <li className={classes.li}>
+          <Avatar className={classes.icon}>
+            <GoodIcon />
+          </Avatar>
+          <div className={classes.text}>
+            声優, アニメ,
+            <a
+              href="http://iris.dive2ent.com/"
+              target="_blank"
+              className={classes.text}
+            >
+              i☆Ris
+            </a>
+          </div>
+        </li>
       </ul>
     </div>
   );
 }
-
-Profile.propTypes = {
+//iris.dive2ent.com/
+http: Profile.propTypes = {
   classes: PropTypes.object.isRequired
 };
 
