@@ -9,29 +9,27 @@ import BirthdayIcon from "@material-ui/icons/Cake";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 
 const styles = {
-  container: {
+  li: {
     display: "flex",
-    // justifyContent: "center",
+    justifyContent: "flex-start",
     paddingBottom: "7px",
-    paddingTop: "7px",
-    // margin: "0 auto",
-    position: "relative",
-    left: "50%"
+    paddingTop: "7px"
+    // margin: "0 auto"
   },
   text: {
     display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: "flex-start",
     paddingLeft: "10px"
   },
   parent: {
-    textAlign: "left"
+    display: "flex",
+    justifyContent: "center"
   },
-  items: {
-    // margin: "0 auto"
-    // textAlign: "center"
-    float: "left",
-    position: "relative"
+  ul: {
+    margin: "0 auto",
+    textAlign: "center"
+    // float: "left",
+    // position: "relative"
   }
 };
 function Profile(props) {
@@ -39,20 +37,20 @@ function Profile(props) {
 
   return (
     <div className={classes.parent}>
-      <ul className={classes.items}>
-        <li className={classes.container}>
+      <ul className={classes.ul}>
+        <li className={classes.li}>
           <Avatar className={classes.icon}>
             <AccountIcon />
           </Avatar>
           <div className={classes.text}>うどん</div>
         </li>
-        <li className={classes.container}>
+        <li className={classes.li}>
           <Avatar className={classes.icon}>
             <AccountIcon />
           </Avatar>
           <div className={classes.text}>堀田 大地 (Daichi Horita)</div>
         </li>
-        <li className={classes.container}>
+        <li className={classes.li}>
           <Avatar className={classes.icon}>
             <BirthdayIcon />
           </Avatar>
@@ -68,7 +66,7 @@ function Profile(props) {
           </div>
         </li>
 
-        <li className={classes.container}>
+        <li className={classes.li}>
           <Avatar className={classes.icon}>
             <EmailIcon />
           </Avatar>
@@ -76,7 +74,7 @@ function Profile(props) {
             udooon0727@gmail.com
           </a>
         </li>
-        <li className={classes.container}>
+        <li className={classes.li}>
           <Avatar src="/static/images/twitter.png" className={classes.icon} />
           <div className={classes.text}>
             <a
@@ -88,7 +86,7 @@ function Profile(props) {
             </a>
           </div>
         </li>
-        <li className={classes.container}>
+        <li className={classes.li}>
           <Avatar src="/static/images/facebook.png" className={classes.icon} />
           <div className={classes.text}>
             <a
@@ -100,7 +98,7 @@ function Profile(props) {
             </a>
           </div>
         </li>
-        {/* <div className={classes.container}>
+        {/* <div className={classes.li}>
         <Avatar src="/static/images/hatenablog.jpg" className={classes.icon} />
         <div className={classes.text}>
           <a
@@ -112,7 +110,7 @@ function Profile(props) {
           </a>
         </div>
       </div> */}
-        <li className={classes.container}>
+        <li className={classes.li}>
           <Avatar className={classes.icon}>
             <SchoolIcon />
           </Avatar>
@@ -126,7 +124,7 @@ function Profile(props) {
             </a>
           </div>
         </li>
-        <li className={classes.container}>
+        <li className={classes.li}>
           <Avatar src="/static/images/labo.png" className={classes.icon} />
           <div className={classes.text}>
             <a
@@ -139,7 +137,7 @@ function Profile(props) {
             </a>
           </div>
         </li>
-        <li className={classes.container}>
+        <li className={classes.li}>
           <Avatar className={classes.icon}>
             <FavoriteIcon />
           </Avatar>
