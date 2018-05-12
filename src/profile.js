@@ -18,7 +18,8 @@ const styles = {
   },
   text: {
     display: "flex",
-    justifyContent: "flex-start",
+    justifyContent: "center",
+    alignItems: "center",
     paddingLeft: "10px"
   },
   parent: {
