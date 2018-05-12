@@ -4,6 +4,7 @@ import classNames from "classnames";
 import { withStyles } from "material-ui/styles";
 import Avatar from "material-ui/Avatar";
 import "./avatar.css";
+import ProfileLogo from "../images/profile-logo.jpg";
 
 const styles = {
   row: {
@@ -26,7 +27,7 @@ function ImageAvatars(props) {
     <div className={classes.row}>
       <Avatar
         alt="udoooom"
-        src="/static/images/profile-logo.jpg"
+        src={ProfileLogo}
         className={classNames(classes.avatar, classes.bigAvatar)}
       />
       <div className="MyName">udoooom</div>

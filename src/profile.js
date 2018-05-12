@@ -8,6 +8,9 @@ import EmailIcon from "@material-ui/icons/Email";
 import BirthdayIcon from "@material-ui/icons/Cake";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import GoodIcon from "@material-ui/icons/WbSunny";
+import FacebookIcon from "./images/facebook.png";
+import TwitterIcon from "./images/twitter.png";
+import LabIcon from "./images/labo.png";
 
 const styles = {
   li: {
@@ -77,7 +80,7 @@ function Profile(props) {
           </a>
         </li>
         <li className={classes.li}>
-          <Avatar src="/static/images/twitter.png" className={classes.icon} />
+          <Avatar src={TwitterIcon} className={classes.icon} />
           <div className={classes.text}>
             <a
               href="https://twitter.com/udoooom/"
@@ -89,7 +92,7 @@ function Profile(props) {
           </div>
         </li>
         <li className={classes.li}>
-          <Avatar src="static/images/facebook.png" className={classes.icon} />
+          <Avatar src={FacebookIcon} className={classes.icon} />
           <div className={classes.text}>
             <a
               href="https://www.facebook.com/daichi0727"
@@ -127,7 +130,7 @@ function Profile(props) {
           </div>
         </li>
         <li className={classes.li}>
-          <Avatar src="/static/images/labo.png" className={classes.icon} />
+          <Avatar src={LabIcon} className={classes.icon} />
           <div className={classes.text}>
             <a
               href="http://mm.cs.uec.ac.jp/e/"
@@ -168,7 +171,7 @@ function Profile(props) {
     </div>
   );
 }
-//iris.dive2ent.com/
+
 http: Profile.propTypes = {
   classes: PropTypes.object.isRequired
 };
