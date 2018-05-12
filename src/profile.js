@@ -121,7 +121,7 @@ function Profile(props) {
               target="_blank"
               className={classes.text}
             >
-              UEC Tokyo Undergraduate 3nd grade
+              UEC Tokyo Undergraduate 3rd grade
             </a>
           </div>
         </li>
