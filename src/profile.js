@@ -89,7 +89,7 @@ function Profile(props) {
           </div>
         </li>
         <li className={classes.li}>
-          <Avatar src="/static/images/facebook.png" className={classes.icon} />
+          <Avatar src="static/images/facebook.png" className={classes.icon} />
           <div className={classes.text}>
             <a
               href="https://www.facebook.com/daichi0727"
