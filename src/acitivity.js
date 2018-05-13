@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import { withStyles } from "material-ui/styles";
 import classnames from "classnames";
@@ -41,7 +41,7 @@ const styles = theme => ({
   }
 });
 
-class Activities extends Component {
+class Activities extends React.Component {
   state = { expanded: false };
   handleExpandClick = () => {
     this.setState({ expanded: !this.state.expanded });

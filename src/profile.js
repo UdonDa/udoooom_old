@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import { withStyles } from "material-ui/styles";
 import Avatar from "material-ui/Avatar";
@@ -65,6 +65,7 @@ function Profile(props) {
               href="http://amzn.asia/iFrgbB3"
               target="_blank"
               className={classes.text}
+              rel="noopener noreferrer"
             >
               欲しいものリスト
             </a>
@@ -86,6 +87,7 @@ function Profile(props) {
               href="https://twitter.com/udoooom/"
               target="_blank"
               className={classes.text}
+              rel="noopener noreferrer"
             >
               @udoooom
             </a>
@@ -98,6 +100,7 @@ function Profile(props) {
               href="https://www.facebook.com/daichi0727"
               target="_blank"
               className={classes.text}
+              rel="noopener noreferrer"
             >
               @daichi0727
             </a>
@@ -124,6 +127,7 @@ function Profile(props) {
               href="http://www.uec.ac.jp/"
               target="_blank"
               className={classes.text}
+              rel="noopener noreferrer"
             >
               UEC Tokyo Undergraduate 3rd grade
             </a>
@@ -136,6 +140,7 @@ function Profile(props) {
               href="http://mm.cs.uec.ac.jp/e/"
               target="_blank"
               className={classes.text}
+              rel="noopener noreferrer"
             >
               My Laboratory is Yanai Laboratory, <br />Department of Computer
               Science
@@ -162,6 +167,7 @@ function Profile(props) {
               href="http://iris.dive2ent.com/"
               target="_blank"
               className={classes.text}
+              rel="noopener noreferrer"
             >
               i☆Ris
             </a>
@@ -172,7 +178,7 @@ function Profile(props) {
   );
 }
 
-http: Profile.propTypes = {
+Profile.propTypes = {
   classes: PropTypes.object.isRequired
 };
 
