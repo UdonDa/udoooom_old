@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import { withStyles } from "material-ui/styles";
 
@@ -22,6 +22,7 @@ function Works(props) {
             href="http://www.uec.ac.jp/"
             target="_blank"
             className={classes.text}
+            rel="noopener noreferrer"
           >
             UEC Tokyo
           </a>
@@ -35,6 +36,7 @@ function Works(props) {
             href="https://corp.t-clue.com/"
             target="_blank"
             className={classes.text}
+            rel="noopener noreferrer"
           >
             CLUE, Inc.
           </a>
@@ -44,7 +46,12 @@ function Works(props) {
         <div className={classes.text}>
           <div className={classes.year}>2017/12 ~ 2018/4</div> Web Software
           Engineer Internship at
-          <a href="https://retty.me/" target="_blank" className={classes.text}>
+          <a
+            href="https://retty.me/"
+            target="_blank"
+            className={classes.text}
+            rel="noopener noreferrer"
+          >
             Retty
           </a>
         </div>
@@ -56,6 +63,7 @@ function Works(props) {
             href="http://mm.cs.uec.ac.jp/e/"
             target="_blank"
             className={classes.text}
+            rel="noopener noreferrer"
           >
             Yanai Lab in UEC Tokyo
           </a>
@@ -65,7 +73,7 @@ function Works(props) {
   );
 }
 
-http: Works.PropTypes = {
+Works.PropTypes = {
   classes: PropTypes.object.isRequired
 };
 

@@ -12,16 +12,35 @@ import Collapse from "material-ui/transitions/Collapse";
 import Avatar from "material-ui/Avatar";
 import IconButton from "material-ui/IconButton";
 import Typography from "material-ui/Typography";
-import red from "material-ui/colors/red";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import ShareIcon from "@material-ui/icons/Share";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
 import HogeLogo from "./images/profile-logo.jpg";
 
-const styles = {
-  school: {}
-};
+const styles = theme => ({
+  card: {
+    maxWidth: 400
+  },
+  media: {
+    height: 0,
+    paddiongTop: "56.25%"
+  },
+  actions: {
+    display: "flex"
+  },
+  expand: {
+    transform: "rotate(0deg)",
+    transitions: theme.transitions.create("transform", {
+      duration: theme.transitions.duration.shortest
+    }),
+    marginLeft: "auto"
+  },
+  expandOpen: {
+    transform: "rotate(180deg)"
+  }
+});
+
 class Activities extends Component {
   state = { expanded: false };
   handleExpandClick = () => {
@@ -60,7 +79,7 @@ class Activities extends Component {
             </IconButton>
             <IconButton
               className={classnames(classes.expand, {
-                [classes.expandedOpen]: this.state.expanded
+                [classes.expandOpen]: this.state.expanded
               })}
               onClick={this.handleExpandClick}
               aria-expanded={this.state.expanded}
