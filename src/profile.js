@@ -168,7 +168,7 @@ function Profile(props) {
     </div>
   );
 }
-//iris.dive2ent.com/
+
 http: Profile.propTypes = {
   classes: PropTypes.object.isRequired
 };
