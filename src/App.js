@@ -80,11 +80,11 @@ class App extends Component {
                     showLabels
                     className={classes.buttons}
                   >
-                    <BottomNavigationAction
+                    {/* <BottomNavigationAction
                       component={({ ...props }) => <Link to="/" {...props} />}
                       label="Home"
                       icon={<HomeIcon />}
-                    />
+                    /> */}
 
                     <BottomNavigationAction
                       component={({ ...props }) => (
@@ -110,13 +110,13 @@ class App extends Component {
                       icon={<WorksIcon />}
                     />
 
-                    <BottomNavigationAction
+                    {/* <BottomNavigationAction
                       component={({ ...props }) => (
                         <Link to="/socials" {...props} />
                       )}
                       label="Social"
                       icon={<SocialsIcon />}
-                    />
+                    /> */}
                   </BottomNavigation>
                 </li>
               </ul>
