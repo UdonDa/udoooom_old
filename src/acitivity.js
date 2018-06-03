@@ -61,6 +61,106 @@ class Activities extends React.Component {
         <Card className={classes.card}>
           <CardHeader
             avatar={
+              <Avatar aria-label="conference" className={classes.avatar}>
+                C
+              </Avatar>
+            }
+            action={
+              <IconButton>
+                <MoreVertIcon />
+              </IconButton>
+            }
+            title="MIRU 2018"
+            subheader="2018/8"
+          />
+          <CardMedia className={classes.media} title="fuge" src={HogeLogo}>
+            {/* <HogeLogo /> */}
+          </CardMedia>
+          <CardContent>
+            <Typography component="p">第21回 画像の認識・理解シンポジウム</Typography>
+          </CardContent>
+          <CardActions className={classes.actions} disableActionSpacing>
+            <IconButton
+              aria-label="share"
+              href="https://sites.google.com/view/miru2018sapporo/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              G
+            </IconButton>
+            <IconButton
+              className={classnames(classes.expand, {
+                [classes.expandOpen]: this.state.expanded
+              })}
+              onClick={this.handleExpandClick}
+              aria-expanded={this.state.expanded}
+              aria-label="Show More"
+            >
+              <ExpandMoreIcon />
+            </IconButton>
+          </CardActions>
+          <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
+            <CardContent>
+              <Typography paragraph variant="body2">
+                Hackson
+              </Typography>
+              <Typography>詳細はGボタンで確認してください.</Typography>
+            </CardContent>
+          </Collapse>
+        </Card>
+        <Card className={classes.card}>
+          <CardHeader
+            avatar={
+              <Avatar aria-label="conference" className={classes.avatar}>
+                C
+              </Avatar>
+            }
+            action={
+              <IconButton>
+                <MoreVertIcon />
+              </IconButton>
+            }
+            title="人工知能学会 2018"
+            subheader="2018/6"
+          />
+          <CardMedia className={classes.media} title="fuge" src={HogeLogo}>
+            {/* <HogeLogo /> */}
+          </CardMedia>
+          <CardContent>
+            <Typography component="p">2018年度 人工知能学会全国大会（第32回）</Typography>
+          </CardContent>
+          <CardActions className={classes.actions} disableActionSpacing>
+            <IconButton
+              aria-label="share"
+              href="https://www.ai-gakkai.or.jp/jsai2018/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              G
+            </IconButton>
+            <IconButton
+              className={classnames(classes.expand, {
+                [classes.expandOpen]: this.state.expanded
+              })}
+              onClick={this.handleExpandClick}
+              aria-expanded={this.state.expanded}
+              aria-label="Show More"
+            >
+              <ExpandMoreIcon />
+            </IconButton>
+          </CardActions>
+          <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
+            <CardContent>
+              <Typography paragraph variant="body2">
+                Hackson
+              </Typography>
+              <Typography>詳細はGボタンで確認してください.</Typography>
+            </CardContent>
+          </Collapse>
+        </Card>
+        <Card className={classes.card}>
+          <CardHeader
+            avatar={
               <Avatar aria-label="hackson" className={classes.avatar}>
                 H
               </Avatar>
@@ -111,8 +211,8 @@ class Activities extends React.Component {
         <Card className={classes.card}>
           <CardHeader
             avatar={
-              <Avatar aria-label="hackson" className={classes.avatar}>
-                H
+              <Avatar aria-label="conference" className={classes.avatar}>
+                C
               </Avatar>
             }
             action={
