@@ -11,6 +11,7 @@ import GoodIcon from "@material-ui/icons/WbSunny";
 import FacebookIcon from "./images/facebook.png";
 import TwitterIcon from "./images/twitter.png";
 import LabIcon from "./images/labo.png";
+import IconButton from "material-ui/IconButton";
 
 const styles = {
   li: {
@@ -118,6 +119,20 @@ function Profile(props) {
           </a>
         </div>
       </div> */}
+
+        <li className={classes.li}>
+          <IconButton
+            aria-label="share"
+            href="https://github.com/UdonDa"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            G
+          </IconButton>
+          <a href="https://github.com/UdonDa" className={classes.text} rel="noopener noreferrer" target="_blank">
+            GitHub@UdonDa
+          </a>
+        </li>
         <li className={classes.li}>
           <Avatar className={classes.icon}>
             <SchoolIcon />
