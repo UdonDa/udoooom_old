@@ -58,7 +58,56 @@ class Activities extends React.Component {
     const { classes } = this.props;
     return (
       <div className={classes.container}>
-        <div>自分の備忘録くらいでしかまだ書いてないです</div>
+        <Card className={classes.card}>
+          <CardHeader
+            avatar={
+              <Avatar aria-label="hackson" className={classes.avatar}>
+                H
+              </Avatar>
+            }
+            action={
+              <IconButton>
+                <MoreVertIcon />
+              </IconButton>
+            }
+            title="SPAJAM 東京予選A"
+            subheader="2018/5"
+          />
+          <CardMedia className={classes.media} title="fuge" src={HogeLogo}>
+            {/* <HogeLogo /> */}
+          </CardMedia>
+          <CardContent>
+            <Typography component="p">高校球児を支援するアプリを作った。優秀賞もらった。</Typography>
+          </CardContent>
+          <CardActions className={classes.actions} disableActionSpacing>
+            <IconButton
+              aria-label="share"
+              href="https://spajam.jp/entry/tokyo-a/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              G
+            </IconButton>
+            <IconButton
+              className={classnames(classes.expand, {
+                [classes.expandOpen]: this.state.expanded
+              })}
+              onClick={this.handleExpandClick}
+              aria-expanded={this.state.expanded}
+              aria-label="Show More"
+            >
+              <ExpandMoreIcon />
+            </IconButton>
+          </CardActions>
+          <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
+            <CardContent>
+              <Typography paragraph variant="body2">
+                Hackson
+              </Typography>
+              <Typography>詳細はGボタンで確認してください.</Typography>
+            </CardContent>
+          </Collapse>
+        </Card>
         <Card className={classes.card}>
           <CardHeader
             avatar={
@@ -81,12 +130,6 @@ class Activities extends React.Component {
             <Typography component="p">初めて学会に行った.</Typography>
           </CardContent>
           <CardActions className={classes.actions} disableActionSpacing>
-            <IconButton aria-label="Add to fav">
-              <FavoriteIcon />
-            </IconButton>
-            <IconButton>
-              <ShareIcon />
-            </IconButton>
             <IconButton
               aria-label="share"
               href="http://db-event.jpn.org/deim2018/"
@@ -139,12 +182,6 @@ class Activities extends React.Component {
             </Typography>
           </CardContent>
           <CardActions className={classes.actions} disableActionSpacing>
-            <IconButton aria-label="Add to fav">
-              <FavoriteIcon />
-            </IconButton>
-            <IconButton>
-              <ShareIcon />
-            </IconButton>
             <IconButton
               aria-label="share"
               href="https://github.com/UdonDa/Geeeeeeeeeeeta"
@@ -197,12 +234,6 @@ class Activities extends React.Component {
             </Typography>
           </CardContent>
           <CardActions className={classes.actions} disableActionSpacing>
-            <IconButton aria-label="Add to fav">
-              <FavoriteIcon />
-            </IconButton>
-            <IconButton>
-              <ShareIcon />
-            </IconButton>
             <IconButton
               aria-label="share"
               href="https://github.com/UdonDa/TonguesTonguesRevolution"
@@ -255,12 +286,6 @@ class Activities extends React.Component {
             </Typography>
           </CardContent>
           <CardActions className={classes.actions} disableActionSpacing>
-            <IconButton aria-label="Add to fav">
-              <FavoriteIcon />
-            </IconButton>
-            <IconButton>
-              <ShareIcon />
-            </IconButton>
             <IconButton
               aria-label="share"
               href="http://eventregist.com/e/IoTASCII4?lang=ja_JP"
@@ -313,12 +338,6 @@ class Activities extends React.Component {
             </Typography>
           </CardContent>
           <CardActions className={classes.actions} disableActionSpacing>
-            <IconButton aria-label="Add to fav">
-              <FavoriteIcon />
-            </IconButton>
-            <IconButton>
-              <ShareIcon />
-            </IconButton>
             <IconButton
               aria-label="share"
               href="http://eventregist.com/e/IoTASCII4?lang=ja_JP"
@@ -370,12 +389,6 @@ class Activities extends React.Component {
             <Typography component="p">ハンドスピナーIoTを作った.</Typography>
           </CardContent>
           <CardActions className={classes.actions} disableActionSpacing>
-            <IconButton aria-label="Add to fav">
-              <FavoriteIcon />
-            </IconButton>
-            <IconButton>
-              <ShareIcon />
-            </IconButton>
             <IconButton
               aria-label="share"
               href="https://github.com/UdonDa/handspinner-iot"
@@ -428,12 +441,6 @@ class Activities extends React.Component {
             </Typography>
           </CardContent>
           <CardActions className={classes.actions} disableActionSpacing>
-            <IconButton aria-label="Add to fav">
-              <FavoriteIcon />
-            </IconButton>
-            <IconButton>
-              <ShareIcon />
-            </IconButton>
             <IconButton
               className={classnames(classes.expand, {
                 [classes.expandOpen]: this.state.expanded
@@ -477,12 +484,6 @@ class Activities extends React.Component {
             <Typography component="p">椅子を運ぶロボットを作った.</Typography>
           </CardContent>
           <CardActions className={classes.actions} disableActionSpacing>
-            <IconButton aria-label="Add to fav">
-              <FavoriteIcon />
-            </IconButton>
-            <IconButton>
-              <ShareIcon />
-            </IconButton>
             <IconButton
               aria-label="share"
               href="https://startuphub.tokyo/magazine/2463"
@@ -538,12 +539,6 @@ class Activities extends React.Component {
             </Typography>
           </CardContent>
           <CardActions className={classes.actions} disableActionSpacing>
-            <IconButton aria-label="Add to fav">
-              <FavoriteIcon />
-            </IconButton>
-            <IconButton>
-              <ShareIcon />
-            </IconButton>
             <IconButton
               aria-label="share"
               href="https://devpost.com/software/project-zyxri71qsp5m"
@@ -598,12 +593,6 @@ class Activities extends React.Component {
             </Typography>
           </CardContent>
           <CardActions className={classes.actions} disableActionSpacing>
-            <IconButton aria-label="Add to fav">
-              <FavoriteIcon />
-            </IconButton>
-            <IconButton>
-              <ShareIcon />
-            </IconButton>
             <IconButton
               aria-label="share"
               href="https://devpost.com/software/paripigrass"
@@ -658,12 +647,6 @@ class Activities extends React.Component {
             </Typography>
           </CardContent>
           <CardActions className={classes.actions} disableActionSpacing>
-            <IconButton aria-label="Add to fav">
-              <FavoriteIcon />
-            </IconButton>
-            <IconButton>
-              <ShareIcon />
-            </IconButton>
             <IconButton
               aria-label="share"
               href="https://devpost.com/software/smart-alarm-zfypgn"
