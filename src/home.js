@@ -2,7 +2,11 @@ import React from "react";
 
 class Home extends React.Component {
   render() {
-    return <div />;
+    return (
+      <div>
+        Welcome to udoooom
+      </div>
+    );
   }
 }
 
