@@ -21,7 +21,7 @@ import GithubIcon from "@material-ui/icons/WbIridescent";
 
 const styles = theme => ({
   card: {
-    maxWidth: 400,
+    maxWidth: 1200,
     paddingTop: "10px",
     margin: "0 auto"
   },
@@ -30,7 +30,8 @@ const styles = theme => ({
     paddiongTop: "56.25%"
   },
   actions: {
-    display: "flex"
+    display: "flex",
+    maxWidth:1000
   },
   expand: {
     transform: "rotate(0deg)",
@@ -57,626 +58,313 @@ class Activities extends React.Component {
   render() {
     const { classes } = this.props;
     return (
-      <div className={classes.container}>
+      <div>
+        <Typography component="h2" variant="h1" gutterBottom className={classes.card}>
+        Publications
+        </Typography>
+
         <Card className={classes.card}>
           <CardHeader
-            avatar={
-              <Avatar aria-label="hackson" className={classes.avatar}>
-                H
-              </Avatar>
-            }
-            action={
-              <IconButton>
-                <MoreVertIcon />
-              </IconButton>
-            }
-            title="SPAJAM 東京予選A"
+            title="MADIMA 2018"
+            subheader="2018/7"
+          />
+          <CardMedia className={classes.media} title="fuge" src={HogeLogo}>
+          </CardMedia>
+          <CardContent>
+            <Typography component="p">
+            <b>Daichi Horita</b>, Ryosuke Tanno, Wataru Shimoda and Keiji Yanai: Food Category Transfer with Conditional Cycle GAN and a Large-scale Food Image Dataset, Proc. of International Workshop on Multimedia Assisted Dietary Management (MADIMA), Stockholm, Sweden (2018/07).
+            </Typography>
+          </CardContent>
+          <CardActions className={classes.actions} disableActionSpacing>
+          <li>
+            <IconButton
+              aria-label="share"
+              href="http://madima.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Info
+            </IconButton>
+            </li>
+          </CardActions>
+        </Card>
+
+        <Card className={classes.card}>
+          <CardHeader
+            title="ACM MultiMedia 2018"
+            subheader="2018/10"
+          />
+          <CardMedia className={classes.media} title="fuge" src={HogeLogo}>
+          </CardMedia>
+          <CardContent>
+            <Typography component="p">
+            Ryosuke Tanno, <b>Daichi Horita</b>, Wataru Shimoda and Keiji Yanai: Magical Rice Bowl: Real-time Food Category Changer, Proc. of ACM Multimedia, Seoul, Korea (2018/10) (Demo paper).
+            </Typography>
+          </CardContent>
+          <CardActions className={classes.actions} disableActionSpacing>
+          <li>
+            <IconButton
+              aria-label="share"
+              href="http://www.acmmm.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Info
+            </IconButton>
+            </li>
+          </CardActions>
+        </Card>
+
+        <Card className={classes.card}>
+          <CardHeader
+            title="VRST 2018"
+            subheader="2018/11"
+          />
+          <CardMedia className={classes.media} title="fuge" src={HogeLogo}>
+          </CardMedia>
+          <CardContent>
+            <Typography component="p">
+            <b>Daichi Horita</b>, Jaehyeong Cho, Takumi Ege, Keiji Yanai: CNN-based Photo Transformation for Improving Attractiveness of Ramen Photos, ACM Symposium on Virtual Reality Software and Technology (VRST), Tokyo, Japan (2018/11). (Poster paper)
+            </Typography>
+          </CardContent>
+          <CardActions className={classes.actions} disableActionSpacing>
+          <li>
+            <IconButton
+              aria-label="share"
+              href="http://madima.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Info
+            </IconButton>
+            </li>
+          </CardActions>
+        </Card>
+
+        <Typography component="h2" variant="h1" gutterBottom className={classes.title}>
+          Hacksons in Japan.
+        </Typography>
+
+        <Card className={classes.card}>
+          <CardHeader
+            title="SPAJAM Hackson in Tokyo Qualification A"
             subheader="2018/5"
           />
           <CardMedia className={classes.media} title="fuge" src={HogeLogo}>
-            {/* <HogeLogo /> */}
           </CardMedia>
           <CardContent>
-            <Typography component="p">高校球児を支援するアプリを作った。優秀賞もらった。</Typography>
+            <Typography component="p">
+            Laravel (php) as the backend and iOS application as the front end, I created an application to thorow money.
+            We was awarded the Excellence Award.
+            </Typography>
           </CardContent>
           <CardActions className={classes.actions} disableActionSpacing>
+          <li>
             <IconButton
               aria-label="share"
-              href="https://spajam.jp/entry/tokyo-a/"
+              href="https://github.com/nirakka/spajam_api"
               target="_blank"
               rel="noopener noreferrer"
             >
-              G
+              Code
             </IconButton>
-            <IconButton
-              className={classnames(classes.expand, {
-                [classes.expandOpen]: this.state.expanded
-              })}
-              onClick={this.handleExpandClick}
-              aria-expanded={this.state.expanded}
-              aria-label="Show More"
-            >
-              <ExpandMoreIcon />
-            </IconButton>
+            </li>
           </CardActions>
-          <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
-            <CardContent>
-              <Typography paragraph variant="body2">
-                Hackson
-              </Typography>
-              <Typography>詳細はGボタンで確認してください.</Typography>
-            </CardContent>
-          </Collapse>
         </Card>
+
         <Card className={classes.card}>
           <CardHeader
-            avatar={
-              <Avatar aria-label="hackson" className={classes.avatar}>
-                H
-              </Avatar>
-            }
-            action={
-              <IconButton>
-                <MoreVertIcon />
-              </IconButton>
-            }
-            title="DEIM2018"
-            subheader="2018/3"
+            title="Puripara Hackson"
+            subheader="2018/5"
           />
           <CardMedia className={classes.media} title="fuge" src={HogeLogo}>
-            {/* <HogeLogo /> */}
           </CardMedia>
           <CardContent>
-            <Typography component="p">初めて学会に行った.</Typography>
+            <Typography component="p">
+            Using Flask (Python) as the backend and LINEBot as the front end, I made a search bot for setting up the Puripara and Purichan.
+            </Typography>
           </CardContent>
+          
           <CardActions className={classes.actions} disableActionSpacing>
+            <li>
             <IconButton
               aria-label="share"
-              href="http://db-event.jpn.org/deim2018/"
+              href="https://github.com/UdonDa/parajuku-ls"
               target="_blank"
               rel="noopener noreferrer"
             >
-              G
+              Code
             </IconButton>
-            <IconButton
-              className={classnames(classes.expand, {
-                [classes.expandOpen]: this.state.expanded
-              })}
-              onClick={this.handleExpandClick}
-              aria-expanded={this.state.expanded}
-              aria-label="Show More"
-            >
-              <ExpandMoreIcon />
-            </IconButton>
+            </li>
+
           </CardActions>
-          <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
-            <CardContent>
-              <Typography paragraph variant="body2">
-                Hackson
-              </Typography>
-              <Typography>詳細はGボタンで確認してください.</Typography>
-            </CardContent>
-          </Collapse>
         </Card>
+
         <Card className={classes.card}>
           <CardHeader
-            avatar={
-              <Avatar aria-label="hackson" className={classes.avatar}>
-                H
-              </Avatar>
-            }
-            action={
-              <IconButton>
-                <MoreVertIcon />
-              </IconButton>
-            }
+            title="POL.inc Hackson"
+            subheader="2018/4"
+          />
+          <CardMedia className={classes.media} title="fuge" src={HogeLogo}>
+          </CardMedia>
+          <CardContent>
+            <Typography component="p">
+            I created unmanned convenience store software that uses Node.js (JavaScript) as the backend and LINEBot as the front end and uses LINE pay as a paying way.
+            </Typography>
+          </CardContent>
+          
+          <CardActions className={classes.actions} disableActionSpacing>
+            <li>
+            <IconButton
+              aria-label="share"
+              href="https://github.com/UdonDa/LaboEleven"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Code
+            </IconButton>
+            </li>
+
+          </CardActions>
+        </Card>
+
+        <Card className={classes.card}>
+          <CardHeader
             title="HackDay"
             subheader="2017/12"
           />
           <CardMedia className={classes.media} title="fuge" src={HogeLogo}>
-            {/* <HogeLogo /> */}
           </CardMedia>
           <CardContent>
             <Typography component="p">
-              ARKitアプリで靴飛ばすと天気予報がわかる.
+            We made an app to throw shoes at AR.
             </Typography>
           </CardContent>
+          
           <CardActions className={classes.actions} disableActionSpacing>
+            <li>
             <IconButton
               aria-label="share"
               href="https://github.com/UdonDa/Geeeeeeeeeeeta"
               target="_blank"
               rel="noopener noreferrer"
             >
-              G
+              Code
             </IconButton>
-            <IconButton
-              className={classnames(classes.expand, {
-                [classes.expandOpen]: this.state.expanded
-              })}
-              onClick={this.handleExpandClick}
-              aria-expanded={this.state.expanded}
-              aria-label="Show More"
-            >
-              <ExpandMoreIcon />
-            </IconButton>
+            </li>
           </CardActions>
-          <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
-            <CardContent>
-              <Typography paragraph variant="body2">
-                Hackson
-              </Typography>
-              <Typography>詳細はGボタンで確認してください.</Typography>
-            </CardContent>
-          </Collapse>
         </Card>
+
         <Card className={classes.card}>
           <CardHeader
-            avatar={
-              <Avatar aria-label="hackson" className={classes.avatar}>
-                H
-              </Avatar>
-            }
-            action={
-              <IconButton>
-                <MoreVertIcon />
-              </IconButton>
-            }
-            title="JP HACKS 2017"
-            subheader="2017/9"
+            title="JP Hacks"
+            subheader="2017/11"
           />
           <CardMedia className={classes.media} title="fuge" src={HogeLogo}>
-            {/* <HogeLogo /> */}
           </CardMedia>
           <CardContent>
             <Typography component="p">
-              舌でやるDDR なのでTTR. 個人的に一番好き
+            We used OpenCV image recognition to recognize the tongue and created a music game that operates by moving the tongue by Unity.
             </Typography>
           </CardContent>
+          
           <CardActions className={classes.actions} disableActionSpacing>
+            <li>
             <IconButton
               aria-label="share"
               href="https://github.com/UdonDa/TonguesTonguesRevolution"
               target="_blank"
               rel="noopener noreferrer"
             >
-              G
+              Code
             </IconButton>
-            <IconButton
-              className={classnames(classes.expand, {
-                [classes.expandOpen]: this.state.expanded
-              })}
-              onClick={this.handleExpandClick}
-              aria-expanded={this.state.expanded}
-              aria-label="Show More"
-            >
-              <ExpandMoreIcon />
-            </IconButton>
+            </li>
           </CardActions>
-          <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
-            <CardContent>
-              <Typography paragraph variant="body2">
-                Hackson
-              </Typography>
-              <Typography>詳細はGボタンで確認してください.</Typography>
-            </CardContent>
-          </Collapse>
-        </Card>
-        <Card className={classes.card}>
-          <CardHeader
-            avatar={
-              <Avatar aria-label="hackson" className={classes.avatar}>
-                H
-              </Avatar>
-            }
-            action={
-              <IconButton>
-                <MoreVertIcon />
-              </IconButton>
-            }
-            title="IoT＆H/W BIZ DAY 4 by ASCII STARTUP"
-            subheader="2017/8"
-          />
-          <CardMedia className={classes.media} title="fuge" src={HogeLogo}>
-            {/* <HogeLogo /> */}
-          </CardMedia>
-          <CardContent>
-            <Typography component="p">
-              色々あって参加させてもらえることになった.
-            </Typography>
-          </CardContent>
-          <CardActions className={classes.actions} disableActionSpacing>
-            <IconButton
-              aria-label="share"
-              href="http://eventregist.com/e/IoTASCII4?lang=ja_JP"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              G
-            </IconButton>
-            <IconButton
-              className={classnames(classes.expand, {
-                [classes.expandOpen]: this.state.expanded
-              })}
-              onClick={this.handleExpandClick}
-              aria-expanded={this.state.expanded}
-              aria-label="Show More"
-            >
-              <ExpandMoreIcon />
-            </IconButton>
-          </CardActions>
-          <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
-            <CardContent>
-              <Typography paragraph variant="body2">
-                Hackson
-              </Typography>
-              <Typography>詳細はGボタンで確認してください.</Typography>
-            </CardContent>
-          </Collapse>
-        </Card>
-        <Card className={classes.card}>
-          <CardHeader
-            avatar={
-              <Avatar aria-label="hackson" className={classes.avatar}>
-                H
-              </Avatar>
-            }
-            action={
-              <IconButton>
-                <MoreVertIcon />
-              </IconButton>
-            }
-            title="IoT＆H/W BIZ DAY 4 by ASCII STARTUP"
-            subheader="2017/8"
-          />
-          <CardMedia className={classes.media} title="fuge" src={HogeLogo}>
-            {/* <HogeLogo /> */}
-          </CardMedia>
-          <CardContent>
-            <Typography component="p">
-              色々あって参加させてもらえることになった.
-            </Typography>
-          </CardContent>
-          <CardActions className={classes.actions} disableActionSpacing>
-            <IconButton
-              aria-label="share"
-              href="http://eventregist.com/e/IoTASCII4?lang=ja_JP"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              G
-            </IconButton>
-            <IconButton
-              className={classnames(classes.expand, {
-                [classes.expandOpen]: this.state.expanded
-              })}
-              onClick={this.handleExpandClick}
-              aria-expanded={this.state.expanded}
-              aria-label="Show More"
-            >
-              <ExpandMoreIcon />
-            </IconButton>
-          </CardActions>
-          <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
-            <CardContent>
-              <Typography paragraph variant="body2">
-                Hackson
-              </Typography>
-              <Typography>詳細はGボタンで確認してください.</Typography>
-            </CardContent>
-          </Collapse>
         </Card>
 
         <Card className={classes.card}>
           <CardHeader
-            avatar={
-              <Avatar aria-label="hackson" className={classes.avatar}>
-                H
-              </Avatar>
-            }
-            action={
-              <IconButton>
-                <MoreVertIcon />
-              </IconButton>
-            }
-            title="HackUTokyo2017"
+            title="HackU Tokyo"
             subheader="2017/8"
           />
           <CardMedia className={classes.media} title="fuge" src={HogeLogo}>
-            {/* <HogeLogo /> */}
           </CardMedia>
           <CardContent>
-            <Typography component="p">ハンドスピナーIoTを作った.</Typography>
+            <Typography component="p">
+            By using the hands spinner, we made a system that can retrieve eating places from the distance calculated from arbitrary direction and rotation number.
+            </Typography>
           </CardContent>
+          
           <CardActions className={classes.actions} disableActionSpacing>
+            <li>
             <IconButton
               aria-label="share"
               href="https://github.com/UdonDa/handspinner-iot"
               target="_blank"
               rel="noopener noreferrer"
             >
-              G
+              Code
             </IconButton>
-            <IconButton
-              className={classnames(classes.expand, {
-                [classes.expandOpen]: this.state.expanded
-              })}
-              onClick={this.handleExpandClick}
-              aria-expanded={this.state.expanded}
-              aria-label="Show More"
-            >
-              <ExpandMoreIcon />
-            </IconButton>
+            </li>
           </CardActions>
-          <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
-            <CardContent>
-              <Typography paragraph variant="body2">
-                Hackson
-              </Typography>
-              <Typography>詳細はGボタンで確認してください.</Typography>
-            </CardContent>
-          </Collapse>
-        </Card>
-        <Card className={classes.card}>
-          <CardHeader
-            avatar={
-              <Avatar aria-label="hackson" className={classes.avatar}>
-                H
-              </Avatar>
-            }
-            action={
-              <IconButton>
-                <MoreVertIcon />
-              </IconButton>
-            }
-            title="HackDayIntenal"
-            subheader="2017/7"
-          />
-          <CardMedia className={classes.media} title="fuge" src={HogeLogo}>
-            {/* <HogeLogo /> */}
-          </CardMedia>
-          <CardContent>
-            <Typography component="p">
-              Yahoo!の社員onlyハッカソンに特別に参加させてもらえた.内容は書けません.
-            </Typography>
-          </CardContent>
-          <CardActions className={classes.actions} disableActionSpacing>
-            <IconButton
-              className={classnames(classes.expand, {
-                [classes.expandOpen]: this.state.expanded
-              })}
-              onClick={this.handleExpandClick}
-              aria-expanded={this.state.expanded}
-              aria-label="Show More"
-            >
-              <ExpandMoreIcon />
-            </IconButton>
-          </CardActions>
-          <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
-            <CardContent>
-              <Typography paragraph variant="body2">
-                Hackson
-              </Typography>
-              <Typography>詳細はGボタンで確認してください.</Typography>
-            </CardContent>
-          </Collapse>
         </Card>
 
         <Card className={classes.card}>
           <CardHeader
-            avatar={
-              <Avatar aria-label="hackson" className={classes.avatar}>
-                H
-              </Avatar>
-            }
-            action={
-              <IconButton>
-                <MoreVertIcon />
-              </IconButton>
-            }
-            title="Tokyo IoT Monodukuri College 2017"
-            subheader="2017/7"
-          />
-          <CardMedia className={classes.media} title="fuge" src={HogeLogo}>
-            {/* <HogeLogo /> */}
-          </CardMedia>
-          <CardContent>
-            <Typography component="p">椅子を運ぶロボットを作った.</Typography>
-          </CardContent>
-          <CardActions className={classes.actions} disableActionSpacing>
-            <IconButton
-              aria-label="share"
-              href="https://startuphub.tokyo/magazine/2463"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              G
-            </IconButton>
-
-            <IconButton
-              className={classnames(classes.expand, {
-                [classes.expandOpen]: this.state.expanded
-              })}
-              onClick={this.handleExpandClick}
-              aria-expanded={this.state.expanded}
-              aria-label="Show More"
-            >
-              <ExpandMoreIcon />
-            </IconButton>
-          </CardActions>
-          <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
-            <CardContent>
-              <Typography paragraph variant="body2">
-                Hackson
-              </Typography>
-              <Typography>詳細はGボタンで確認してください.</Typography>
-            </CardContent>
-          </Collapse>
-        </Card>
-
-        <Card className={classes.card}>
-          <CardHeader
-            avatar={
-              <Avatar aria-label="hackson" className={classes.avatar}>
-                H
-              </Avatar>
-            }
-            action={
-              <IconButton>
-                <MoreVertIcon />
-              </IconButton>
-            }
-            title="ラーメン二郎ハッカソン"
+            title="Ramen Jiro Hackson"
             subheader="2017/6"
           />
           <CardMedia className={classes.media} title="fuge" src={HogeLogo}>
-            {/* <HogeLogo /> */}
           </CardMedia>
           <CardContent>
             <Typography component="p">
-              臭気センサーに息を吐き,
-              ニンニクが入った二郎を食べた後のニンニク臭をLEDを用いて可視化した.
+            We made a system to detect and notify the smell of garlic by breathing out.
             </Typography>
           </CardContent>
+          
           <CardActions className={classes.actions} disableActionSpacing>
+            <li>
             <IconButton
               aria-label="share"
-              href="https://devpost.com/software/project-zyxri71qsp5m"
+              href="https://github.com/UdonDa/RamenZirouHackson"
               target="_blank"
               rel="noopener noreferrer"
             >
-              G
+              Code
             </IconButton>
-
-            <IconButton
-              className={classnames(classes.expand, {
-                [classes.expandOpen]: this.state.expanded
-              })}
-              onClick={this.handleExpandClick}
-              aria-expanded={this.state.expanded}
-              aria-label="Show More"
-            >
-              <ExpandMoreIcon />
-            </IconButton>
+            </li>
           </CardActions>
-          <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
-            <CardContent>
-              <Typography paragraph variant="body2">
-                Hackson
-              </Typography>
-              <Typography>詳細はGボタンで確認してください.</Typography>
-            </CardContent>
-          </Collapse>
         </Card>
 
         <Card className={classes.card}>
           <CardHeader
-            avatar={
-              <Avatar aria-label="hackson" className={classes.avatar}>
-                H
-              </Avatar>
-            }
-            action={
-              <IconButton>
-                <MoreVertIcon />
-              </IconButton>
-            }
-            title="HackU 電通大"
-            subheader="2017/5"
+            title="HackU in UEC Tokyo"
+            subheader="2017/6"
           />
           <CardMedia className={classes.media} title="fuge" src={HogeLogo}>
-            {/* <HogeLogo /> */}
           </CardMedia>
           <CardContent>
             <Typography component="p">
-              飲み会を楽しくしようとハックした。
+            We created an IoT device to be attached to a beer glass.The color of the LED changes when toasting due to acceleration and collision detection.
             </Typography>
           </CardContent>
+          
           <CardActions className={classes.actions} disableActionSpacing>
+            <li>
             <IconButton
               aria-label="share"
-              href="https://devpost.com/software/paripigrass"
+              href="https://github.com/UdonDa/HackU"
               target="_blank"
               rel="noopener noreferrer"
             >
-              G
+              Code
             </IconButton>
-
-            <IconButton
-              className={classnames(classes.expand, {
-                [classes.expandOpen]: this.state.expanded
-              })}
-              onClick={this.handleExpandClick}
-              aria-expanded={this.state.expanded}
-              aria-label="Show More"
-            >
-              <ExpandMoreIcon />
-            </IconButton>
+            </li>
           </CardActions>
-          <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
-            <CardContent>
-              <Typography paragraph variant="body2">
-                Hackson
-              </Typography>
-              <Typography>詳細はGボタンで確認してください.</Typography>
-            </CardContent>
-          </Collapse>
         </Card>
-
-        <Card className={classes.card}>
-          <CardHeader
-            avatar={
-              <Avatar aria-label="hackson" className={classes.avatar}>
-                H
-              </Avatar>
-            }
-            action={
-              <IconButton>
-                <MoreVertIcon />
-              </IconButton>
-            }
-            title="CodePBL"
-            subheader="2016/9"
-          />
-          <CardMedia className={classes.media} title="fuge" src={HogeLogo}>
-            {/* <HogeLogo /> */}
-          </CardMedia>
-          <CardContent>
-            <Typography component="p">
-              目覚ましアプリ。アラーム解除に,加速度センサーを用いた玉転がしを用いることで,無理やり腰を起こそうとした.
-            </Typography>
-          </CardContent>
-          <CardActions className={classes.actions} disableActionSpacing>
-            <IconButton
-              aria-label="share"
-              href="https://devpost.com/software/smart-alarm-zfypgn"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              G
-            </IconButton>
-
-            <IconButton
-              className={classnames(classes.expand, {
-                [classes.expandOpen]: this.state.expanded
-              })}
-              onClick={this.handleExpandClick}
-              aria-expanded={this.state.expanded}
-              aria-label="Show More"
-            >
-              <ExpandMoreIcon />
-            </IconButton>
-          </CardActions>
-          <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
-            <CardContent>
-              <Typography paragraph variant="body2">
-                Hackson
-              </Typography>
-              <Typography>詳細はGボタンで確認してください.</Typography>
-            </CardContent>
-          </Collapse>
-        </Card>
-      </div>
+        
+        
+        </div>
     );
   }
 }
