@@ -65,7 +65,7 @@ class Activities extends React.Component {
 
         <Card className={classes.card}>
           <CardHeader
-            title="IJCAI 2018 workshop"
+            title="MADIMA 2018 workshop"
             subheader="2018/7"
           />
           <CardMedia className={classes.media} title="fuge" src={HogeLogo}>
@@ -131,7 +131,7 @@ class Activities extends React.Component {
           <li>
             <IconButton
               aria-label="share"
-              href="http://madima.org/"
+              href="https://vrst.acm.org/vrst2018/"
               target="_blank"
               rel="noopener noreferrer"
             >
