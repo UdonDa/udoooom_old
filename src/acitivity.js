@@ -65,7 +65,7 @@ class Activities extends React.Component {
 
         <Card className={classes.card}>
           <CardHeader
-            title="MADIMA 2018"
+            title="IJCAI 2018 workshop"
             subheader="2018/7"
           />
           <CardMedia className={classes.media} title="fuge" src={HogeLogo}>
@@ -132,6 +132,32 @@ class Activities extends React.Component {
             <IconButton
               aria-label="share"
               href="http://madima.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Info
+            </IconButton>
+            </li>
+          </CardActions>
+        </Card>
+
+        <Card className={classes.card}>
+          <CardHeader
+            title="NIPS 2018 workshop"
+            subheader="2018/12"
+          />
+          <CardMedia className={classes.media} title="fuge" src={HogeLogo}>
+          </CardMedia>
+          <CardContent>
+            <Typography component="p">
+            Yuki Izumi, <b>Daichi Horita</b>, Ryosuke Tanno and Keiji Yanai: Real-Time Image Classification and Transformation Apps on iOS by “Chainer2MPSNNGraph”, NIPS 2018 Workshop on Machine Learning on the Phone and other Consumer Devices (MLPCD), Motreal, Canada (2018/12).
+            </Typography>
+          </CardContent>
+          <CardActions className={classes.actions} disableActionSpacing>
+          <li>
+            <IconButton
+              aria-label="share"
+              href="https://sites.google.com/view/nips-2018-on-device-ml/venue"
               target="_blank"
               rel="noopener noreferrer"
             >
