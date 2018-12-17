@@ -21,7 +21,7 @@ import GithubIcon from "@material-ui/icons/WbIridescent";
 
 const styles = theme => ({
   card: {
-    maxWidth: 1200,
+    maxWidth: "80%",
     paddingTop: "10px",
     margin: "0 auto"
   },
@@ -60,7 +60,7 @@ class Activities extends React.Component {
     return (
       <div>
         <Typography component="h2" variant="h1" gutterBottom className={classes.card}>
-        Publications
+        Publications International Conference
         </Typography>
 
         <Card className={classes.card}>
@@ -98,7 +98,7 @@ class Activities extends React.Component {
           </CardMedia>
           <CardContent>
             <Typography component="p">
-            Ryosuke Tanno, <b>Daichi Horita</b>, Wataru Shimoda and Keiji Yanai: Magical Rice Bowl: Real-time Food Category Changer, Proc. of ACM Multimedia, Seoul, Korea (2018/10) (Demo paper).
+            Ryosuke Tanno(*), <b>Daichi Horita(*)</b>, Wataru Shimoda and Keiji Yanai: Magical Rice Bowl: Real-time Food Category Changer, Proc. of ACM Multimedia, Seoul, Korea (2018/10) (Demo paper). <b>(*) equally contributed</b>
             </Typography>
           </CardContent>
           <CardActions className={classes.actions} disableActionSpacing>
@@ -166,6 +166,94 @@ class Activities extends React.Component {
             </li>
           </CardActions>
         </Card>
+
+        <p> </p>
+        <p> </p>
+
+        <Typography component="h2" variant="h1" gutterBottom className={classes.card}>
+        Publications International Conference
+        </Typography>
+
+        <Card className={classes.card}>
+          <CardHeader
+            title="JSAI"
+            subheader="2018/06"
+          />
+          <CardMedia className={classes.media} title="fuge" src={HogeLogo}>
+          </CardMedia>
+          <CardContent>
+            <Typography component="p">
+            <b>堀田 大地</b>, 丹野 良介, 下田 和, 柳井 啓司(電通大):  大量のTwitter画像を用いたConditional Cycle GANによる食事写真カテゴリ変換, 2018年度 人工知能学会全国大会(第32回)
+            </Typography>
+          </CardContent>
+          <CardActions className={classes.actions} disableActionSpacing>
+          <li>
+            <IconButton
+              aria-label="share"
+              href="https://www.ai-gakkai.or.jp/jsai2018/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Info
+            </IconButton>
+            </li>
+          </CardActions>
+        </Card>
+
+        <Card className={classes.card}>
+          <CardHeader
+            title="MIRU"
+            subheader="2018/08"
+          />
+          <CardMedia className={classes.media} title="fuge" src={HogeLogo}>
+          </CardMedia>
+          <CardContent>
+            <Typography component="p">
+            <b>堀田 大地</b>, 丹野 良介, 下田 和, 柳井 啓司(電通大): Web画像マイニングを用いたConditional Cycle GANによる食事画像カテゴリ変換, 第21回 画像の認識・理解シンポジウム.
+            </Typography>
+          </CardContent>
+          <CardActions className={classes.actions} disableActionSpacing>
+          <li>
+            <IconButton
+              aria-label="share"
+              href="https://sites.google.com/view/miru2018sapporo/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Info
+            </IconButton>
+            </li>
+          </CardActions>
+        </Card>
+
+        <Card className={classes.card}>
+          <CardHeader
+            title="MIRU"
+            subheader="2018/08"
+          />
+          <CardMedia className={classes.media} title="fuge" src={HogeLogo}>
+          </CardMedia>
+          <CardContent>
+            <Typography component="p">
+            泉 裕貴, <b>堀田 大地</b>, 丹野 良介, 柳井 啓司(電通大): Chainer2MPSGraph: 高速深層学習モバイルアプリ作成のためのモデルコンバータ. 第21回 画像の認識・理解シンポジウム.
+            </Typography>
+          </CardContent>
+          <CardActions className={classes.actions} disableActionSpacing>
+          <li>
+            <IconButton
+              aria-label="share"
+              href="https://sites.google.com/view/miru2018sapporo/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Info
+            </IconButton>
+            </li>
+          </CardActions>
+        </Card>
+
+        <p> </p>
+        <p> </p>
 
         <Typography component="h2" variant="h1" gutterBottom className={classes.title}>
           Hacksons in Japan.
