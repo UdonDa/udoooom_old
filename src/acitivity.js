@@ -171,7 +171,7 @@ class Activities extends React.Component {
         <p> </p>
 
         <Typography component="h2" variant="h1" gutterBottom className={classes.card}>
-        Publications International Conference
+        Publications Domestic Conferences
         </Typography>
 
         <Card className={classes.card}>
