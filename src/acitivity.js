@@ -65,7 +65,7 @@ class Activities extends React.Component {
 
         <Card className={classes.card}>
           <CardHeader
-            title="MADIMA 2018 workshop"
+            title="IJCAI 2018 workshop"
             subheader="2018/7"
           />
           <CardMedia className={classes.media} title="fuge" src={HogeLogo}>
@@ -167,11 +167,65 @@ class Activities extends React.Component {
           </CardActions>
         </Card>
 
+        <Card className={classes.card}>
+          <CardHeader
+            title="IEEE VR 2018"
+            subheader="2019/3"
+          />
+          <CardMedia className={classes.media} title="fuge" src={HogeLogo}>
+          </CardMedia>
+          <CardContent>
+            <Typography component="p">
+            Kizashi Nakano(*), Daichi Horita(*), Nobuchika Sakata, Kiyoshi Kiyokawa, Keiji Yanai, Takuji Narumi: Enchanting Your Noodles: GAN-based Real-time Food-to-Food Translation and Its Impact on Vision-induced Gustatory Manipulation. Proc. of IEEE Conference on Virtual Reality, Osaka, Japan (2019/3)(Poster).
+            </Typography>
+          </CardContent>
+          <CardActions className={classes.actions} disableActionSpacing>
+          <li>
+            <IconButton
+              aria-label="share"
+              href="http://ieeevr.org/2019/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Info
+            </IconButton>
+            </li>
+          </CardActions>
+        </Card>
+
+
+        <Card className={classes.card}>
+          <CardHeader
+            title="IEEE VR 2018"
+            subheader="2019/3"
+          />
+          <CardMedia className={classes.media} title="fuge" src={HogeLogo}>
+          </CardMedia>
+          <CardContent>
+            <Typography component="p">
+            Kizashi Nakano(*), Daichi Horita(*), Nobuchika Sakata, Kiyoshi Kiyokawa, Keiji Yanai, Takuji Narumi: Enchanting Your Noodles: GAN-based Real-time Food-to-Food Translation and Its Impact on Vision-induced Gustatory Manipulation. Proc. of IEEE Conference on Virtual Reality, Osaka, Japan (2019/3)(Demo).
+            </Typography>
+          </CardContent>
+          <CardActions className={classes.actions} disableActionSpacing>
+          <li>
+            <IconButton
+              aria-label="share"
+              href="http://ieeevr.org/2019/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Info
+            </IconButton>
+            </li>
+          </CardActions>
+        </Card>
+
+
         <p> </p>
         <p> </p>
 
         <Typography component="h2" variant="h1" gutterBottom className={classes.card}>
-        Publications Domestic Conferences
+        Publications Domestic Conferences
         </Typography>
 
         <Card className={classes.card}>

@@ -7,5 +7,8 @@ This portfolio site is made by React.
 [react-router](https://github.com/ReactTraining/react-router)
 [material-ui](https://github.com/mui-org/material-ui)
 
+## Usage, Update
+1. 
+
 ## License
 MIT. Copyright (c) 2018 Daichi Horita
