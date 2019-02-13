@@ -169,7 +169,7 @@ class Activities extends React.Component {
 
         <Card className={classes.card}>
           <CardHeader
-            title="IEEE VR 2018"
+            title="IEEE VR 2019"
             subheader="2019/3"
           />
           <CardMedia className={classes.media} title="fuge" src={HogeLogo}>
@@ -196,7 +196,7 @@ class Activities extends React.Component {
 
         <Card className={classes.card}>
           <CardHeader
-            title="IEEE VR 2018"
+            title="IEEE VR 2019"
             subheader="2019/3"
           />
           <CardMedia className={classes.media} title="fuge" src={HogeLogo}>
