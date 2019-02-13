@@ -176,7 +176,7 @@ class Activities extends React.Component {
           </CardMedia>
           <CardContent>
             <Typography component="p">
-            Kizashi Nakano(*), Daichi Horita(*), Nobuchika Sakata, Kiyoshi Kiyokawa, Keiji Yanai, Takuji Narumi: Enchanting Your Noodles: GAN-based Real-time Food-to-Food Translation and Its Impact on Vision-induced Gustatory Manipulation. Proc. of IEEE Conference on Virtual Reality, Osaka, Japan (2019/3)(Poster).
+            Kizashi Nakano(*), <b>Daichi Horita(*)</b>, Nobuchika Sakata, Kiyoshi Kiyokawa, Keiji Yanai, Takuji Narumi: Enchanting Your Noodles: GAN-based Real-time Food-to-Food Translation and Its Impact on Vision-induced Gustatory Manipulation. Proc. of IEEE Conference on Virtual Reality, Osaka, Japan (2019/3)(Poster).<b>(*) equally contributed</b>
             </Typography>
           </CardContent>
           <CardActions className={classes.actions} disableActionSpacing>
@@ -203,7 +203,7 @@ class Activities extends React.Component {
           </CardMedia>
           <CardContent>
             <Typography component="p">
-            Kizashi Nakano(*), Daichi Horita(*), Nobuchika Sakata, Kiyoshi Kiyokawa, Keiji Yanai, Takuji Narumi: Enchanting Your Noodles: GAN-based Real-time Food-to-Food Translation and Its Impact on Vision-induced Gustatory Manipulation. Proc. of IEEE Conference on Virtual Reality, Osaka, Japan (2019/3)(Demo).
+            Kizashi Nakano(*), <b>Daichi Horita(*)</b>, Nobuchika Sakata, Kiyoshi Kiyokawa, Keiji Yanai, Takuji Narumi: Enchanting Your Noodles: GAN-based Real-time Food-to-Food Translation and Its Impact on Vision-induced Gustatory Manipulation. Proc. of IEEE Conference on Virtual Reality, Osaka, Japan (2019/3)(Demo).<b>(*) equally contributed</b>
             </Typography>
           </CardContent>
           <CardActions className={classes.actions} disableActionSpacing>
